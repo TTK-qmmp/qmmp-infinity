@@ -77,6 +77,19 @@ InfinityWidget::~InfinityWidget()
     deinit();
 }
 
+void InfinityWidget::start()
+{
+    if(isVisible())
+    {
+        m_timer->start();
+    }
+}
+
+void InfinityWidget::stop()
+{
+    m_timer->stop();
+}
+
 void InfinityWidget::readSettings()
 {
 #if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
