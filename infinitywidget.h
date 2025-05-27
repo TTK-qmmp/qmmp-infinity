@@ -122,10 +122,9 @@ private:
     float m_left[QMMP_VISUAL_NODE_SIZE];
     float m_right[QMMP_VISUAL_NODE_SIZE];
 
-    bool m_update = false;
     QMenu *m_menu;
     QAction *m_screenAction = nullptr;
-    QActionGroup *m_effectsGroup, *m_colorsGroup;
+    QActionGroup *m_effectActions, *m_colorActions;
 
 };
 
