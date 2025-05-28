@@ -83,7 +83,6 @@ private slots:
     void readSettings();
     void writeSettings();
     void updateVisual();
-    void setFullScreen(bool yes);
 
 private:
     virtual void hideEvent(QHideEvent *e) override final;
@@ -123,7 +122,6 @@ private:
     float m_right[QMMP_VISUAL_NODE_SIZE];
 
     QMenu *m_menu;
-    QAction *m_screenAction = nullptr;
     QActionGroup *m_effectActions, *m_colorActions;
 
 };

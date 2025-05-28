@@ -146,18 +146,6 @@ void InfinityWidget::updateVisual()
     }
 }
 
-void InfinityWidget::setFullScreen(bool yes)
-{
-    if(yes)
-    {
-        setWindowState(windowState() | Qt::WindowFullScreen);
-    }
-    else
-    {
-        setWindowState(windowState() & ~Qt::WindowFullScreen);
-    }
-}
-
 void InfinityWidget::hideEvent(QHideEvent *)
 {
     m_timer->stop();
@@ -288,13 +276,6 @@ void InfinityWidget::createMenu()
 {
     m_menu = new QMenu(this);
     connect(m_menu, SIGNAL(triggered(QAction*)), SLOT(writeSettings()));
-
-    m_screenAction = new QAction(tr("Fullscreen"), this);
-    m_screenAction->setCheckable(true);
-    connect(m_screenAction, SIGNAL(triggered(bool)), this, SLOT(setFullScreen(bool)));
-
-    m_menu->addAction(m_screenAction);
-    m_menu->addSeparator();
 
     m_effectActions = new QActionGroup(this);
     m_effectActions->setExclusive(true);
