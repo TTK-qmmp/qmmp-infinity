@@ -233,8 +233,6 @@ void InfinityWidget::process(float *left, float *right)
         m_newColor = rand() % NB_PALETTES;
         m_colorCounter = 0;
     }
-
-    update();
 }
 
 void InfinityWidget::deinit()
