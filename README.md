@@ -1,5 +1,7 @@
 This is a plugin for Qmmp (1.6.0 or greater) visual.
 
+Based on [infinity-plugin](https://dprotti.github.io/infinity-plugin).
+
 ![Image](https://github.com/TTK-qmmp/qmmp-infinity/blob/master/image/1.png?raw=true)
 
 The following packages are required, including development headers,

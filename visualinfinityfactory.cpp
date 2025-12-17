@@ -31,8 +31,9 @@ void VisualInfinityFactory::showAbout(QWidget *parent)
 {
     QMessageBox::about(parent, tr("About Infinity Visual Plugin"),
                        tr("Qmmp Infinity Visual Plugin") + "\n" +
-                       tr("This plugin adds Infinity visualization") + "\n" +
-                       tr("Written by: Greedysky <greedysky@163.com>"));
+                       tr("Written by: Greedysky <greedysky@163.com>") + "\n" +
+                       tr("Based on the source code from the infinity-plugin") + "\n" +
+                       tr("Written by Duilio Protti (C) 2016"));
 }
 
 QString VisualInfinityFactory::translation() const
